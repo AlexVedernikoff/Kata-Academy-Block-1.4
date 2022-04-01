@@ -1,0 +1,135 @@
+@font-face {
+        font-family: 'TT Lakes';
+        src: url('Assets/Fonts/TTLakes/TTLakesCondensed-Medium.ttf');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+@font-face {
+        font-family: 'TT Lakes';
+        src: url('Assets/Fonts/TTLakes/TTLakes-ExtraBold.ttf');
+        font-weight: bold;
+        font-style: normal;
+}
+
+body {
+	font-family: 'TT Lakes';
+}
+
+.aside {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: white;
+	width: 320px;
+	height: 100vh;
+	box-shadow: 20px 0px 20px -10px #808080;
+}
+
+.aside__wrapper {
+	height: 100vh;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*----Стили Хедера и верхнего навигационного меню nav----------------------------------------------------*/
+
+.aside__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	min-height: 85px;
+}
+
+.aside__button 
+{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.aside__logo {
+	width: 170px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*--------Стили меню-списка---------------------------------------------------*/
+
+.aside ul {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.aside__menu {
+	flex-basis: 50%;
+	flex-shrink: 1;
+}
+
+.aside__menu ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-weight: normal;
+}
+
+.aside__menu ul li {
+	padding: 8px 0;
+	position: relative;
+}
+
+.aside__menu ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.aside__menu ul li:hover {
+	opacity: 0.5;
+	transition-duration: 0.4s;
+}
+
+.aside__menu ul li:hover::before {
+	display: inline-block;
+	background-image: url("Assets/Images/highlightSmall.png"); 
+	vertical-align: middle;
+	content: "";
+	position: absolute;
+	left: -20px;
+	top: 10%;
+	width: 4px;
+	height: 32px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+.aside__actions ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 150px;
+}
+
+.aside__phone {
+	margin-top: 1em;
+	margin-bottom: 2.5em;
+	font-weight: bold;
+}
+
+
+.aside__language ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100px;	
+}
+
+.aside__language_checked {
+	opacity: 0.6;
+}
