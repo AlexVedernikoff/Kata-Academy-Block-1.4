@@ -24,12 +24,13 @@ body {
 	z-index: 1;
 	background-color: white;
 	width: 320px;
-	height: 100vh;
+	height: 100%;
+	min-height: 620px;
 	box-shadow: 20px 0px 20px -10px #808080;
 }
 
 .aside__wrapper {
-	height: 100vh;
+	height: 100%;
 	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
@@ -71,6 +72,7 @@ body {
 .aside__menu {
 	flex-basis: 50%;
 	flex-shrink: 1;
+	flex-grow: 1;
 }
 
 .aside__menu ul {
