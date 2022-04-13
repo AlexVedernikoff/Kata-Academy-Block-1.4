@@ -39,7 +39,7 @@ body {
 
 /*----Стили Хедера и верхнего навигационного меню nav----------------------------------------------------*/
 
-.aside__nav {
+.aside__header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -70,20 +70,34 @@ body {
 }
 
 .aside__menu {
-	flex-basis: 50%;
-	flex-shrink: 1;
+	display: flex;
+	justify-content: flex-start;
 	flex-grow: 1;
 }
+
+/*.aside__menu ul::after {
+	content: "";
+	background: navy;
+	display: inline-block;
+	width: 320px;
+	flex-basis: 120px;
+	flex-grow: 2;
+	flex-shrink: 2;
+}*/
 
 .aside__menu ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	font-weight: normal;
+	height: 470px;
+	margin-top: 0px;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
 
 .aside__menu ul li {
-	padding: 8px 0;
+	/*padding: 8px 0;*/
 	position: relative;
 }
 
@@ -104,7 +118,7 @@ body {
 	content: "";
 	position: absolute;
 	left: -20px;
-	top: 10%;
+	bottom: -25%;
 	width: 4px;
 	height: 32px;
 }
@@ -119,9 +133,10 @@ body {
 }
 
 .aside__phone {
-	margin-top: 1em;
-	margin-bottom: 2.5em;
+	margin-top: 0.75em;
+	margin-bottom: 2em;
 	font-weight: bold;
+	font-size: 21px;
 }
 
 
@@ -129,9 +144,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100px;	
+	width: 85px;	
 }
 
-.aside__language_checked {
+.aside__button_checked {
 	opacity: 0.6;
 }
